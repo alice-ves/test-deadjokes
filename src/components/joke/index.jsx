@@ -1,15 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './style.css';
 
 export const Joke = ({ name, text, avatar }) => {
-  const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
+  const [likes, setLikes] = useState(0);
 
-  const increaseLike = () => {
-    setLikes(likes + 1);
-  };
   const decreaseLike = () => {
     setDislikes(dislikes + 1);
+  };
+  const increaseLike = () => {
+    setLikes(likes + 1);
   };
 
   return (
